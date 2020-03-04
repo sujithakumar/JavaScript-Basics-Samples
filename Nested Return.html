@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script>
+        function callme() {
+            var x = add(2)(3)(5);
+            console.log(x);
+        }
+        function add(a) {
+            return function (b) {
+                return function (c) {
+                    return a + b + c;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    Nested return statement
+    <button type="submit" onclick="callme()">submit</button>
+</body>
+
+
+</html>
