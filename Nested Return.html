@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="./Assets/Stylesheets/commonStyles.css">
     <script>
         function callme() {
             var x = add(2)(3)(5);
@@ -16,9 +17,24 @@
     </script>
 </head>
 
-<body>
-    Nested return statement
-    <button type="submit" onclick="callme()">submit</button>
+<body onLoad="callme()">
+    <h4>Nested return</h4> 
+    <p>check console for output</p>
+    <pre>
+        <code>
+            function callme() {
+                var x = add(2)(3)(5);
+                console.log(x);
+            }
+            function add(a) {
+                return function (b) {
+                    return function (c) {
+                        return a + b + c;
+                    }
+                }
+            }
+        </code>
+    </pre>
 </body>
 
 

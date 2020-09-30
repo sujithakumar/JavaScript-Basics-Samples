@@ -1,33 +1,42 @@
-html,
-body {
+:root{
     margin: auto;
     /* justify-content: center; */
     /* text-align: center; */
     font-family: 'Times New Roman', Times, serif;
-    font-size: medium;
+    font-size: 18px;
     color:black;
-}
-
-body {
     /* the content will be centered on devices wider than 500px */
     max-width: 800px;
-    margin: auto;
     padding: 20px;
 }
 
 .div-borders {
-    padding: 10px;
+    padding: 12px;
     border: 2px solid grey;
     box-shadow: 3px 3px 3px grey;
-    margin: 10px;
+    margin: 15px;
 }
 
 p{
-    padding: 10px;
+    padding: 3px;
+    font-style: italic;
+    color: blueviolet;
+    font-weight: bold;
 }
 
 h4{
     color:orangered;
     text-decoration: underline;
     font-weight: bold;
+    font-size:25px !important;
+}
+
+pre{
+    border:3px solid green;
+    box-shadow: 5px 5px 3px greenyellow;
+}
+code{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 15px !important;
+    color:rgb(24, 19, 19);
 }

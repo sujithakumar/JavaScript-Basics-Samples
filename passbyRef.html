@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./Assets/Stylesheets/commonStyles.css">
+    <script>
+       function a(){
+           var x = new Object();
+           x.name="suji";
+           x.age="10";
+           var z =x;
+           console.log("value of x: "+x.age);
+           console.log("value of z: "+z.age);
+
+           z.age="30";
+           z.mark="100";
+           console.log("value of x: "+x.age);
+           console.log(x);
+           console.log("value of z: "+z.age);
+           console.log(z);
+       }
+    </script>
+</head>
+
+<body onLoad="a();">
+
+    <div>
+        <h4>Pass by Ref</h4>
+        <p>check console for output</p>
+        <pre>
+        <code>
+            function a(){
+                 var x = new Object();
+                x.name="suji";
+                x.age="10";
+                var z =x;
+                console.log("value of x: "+x.age);
+                console.log("value of z: "+z.age);
+                
+                z.age="30";
+                z.mark="100";
+                console.log("value of x: "+x.age);
+                console.log(x);
+                console.log("value of z: "+z.age);
+                console.log(z);
+            }
+        </code>
+    </pre>
+    </div>
+</body>
+
+
+</html>

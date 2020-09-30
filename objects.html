@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./Assets/Stylesheets/commonStyles.css">
+    <script>
+        function a() {
+            var a = new Object();
+            a.name = "suji";
+            a.age = "10";
+
+            console.log(a);
+            var b = a;
+            b.name = "john";
+            console.log(b);
+            console.log("a.name: " + a.name);
+            console.log("b.name:" + b.name);
+
+            //empty object 
+            a = {};
+            console.log(a);
+
+            //delete value in a object
+            delete b.name
+            console.log(b);
+
+            //delete object
+            delete b;
+            cosole.log(b);
+
+        }
+    </script>
+</head>
+
+<body onLoad="a();">
+
+    <div>
+        <h4>objects</h4>
+        <p>check console for output</p>
+        <pre>
+        <code>
+            function a() {
+                var a = new Object();
+                a.name = "suji";
+                a.age = "10";
+                console.log(a);
+
+                var b = a;
+                b.name = "john";
+
+                console.log(b);
+                console.log("a: " + a.name);
+                console.log("b:" + b.name);
+    
+                //empty object 
+                a={};
+                console.log(a);
+
+                //delete value in a object
+                delete b.name
+                console.log(b);
+    
+                //delete object
+                delete b;
+                cosole.log(b);
+    
+    
+            }
+        </code>
+    </pre>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <script>
+        var n = 10;
+        function isPrime(l) {
+            for (var i = 2; i < l; i++) {
+                if (!(l % i === 0)) {
+                    return true;
+                }
+            }
+
+        }
+
+        function getPrimes(n) {
+            var x = [2];
+            for (var a = 3; a < n; a += 2) {
+
+                if (isPrime(a)) {
+                    x.push(a);
+                }
+            }
+            return x;
+
+        }
+        console.log(getPrimes(10));
+    </script>
+</head>
+
+<body>
+    Nested return statement
+    <!-- Enter your HTML code here -->
+
+    <div>
+        <input type="text" autofocus />
+        
+
+    </div>
+</body>
+
+
+</html>

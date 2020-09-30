@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./Assets/Stylesheets/commonStyles.css">
+    <script>
+        function a() {
+
+            var a = 0, b = 1, c = null, d = "1", e;
+
+            if (a) {
+                console.log(a);
+            } else {
+                console.log("if stmt returns false for zero")
+            }
+
+            if (c) {
+                console.log(c);
+            } else {
+                console.log("if stmt returns false for null")
+            }
+
+            if (e) {
+                console.log(e);
+            } else {
+                console.log("if stmt returns false for undefined")
+            }
+
+            if (b == d) {
+                console.log("b and d are equal when ==");
+            } else {
+                console.log("b and d are not equal when ==");
+            }
+
+            if (b === d) {
+                console.log("b and d are equal when ===");
+            } else {
+                console.log("b and d are not equal when ===");
+            }
+
+
+        }
+    </script>
+</head>
+
+<body onLoad="a();">
+
+    <div>
+        <p>check console for output</p>
+        <pre>
+        <code>
+            function a(){
+
+                var a=0, b=1, c=null, d="1",e;
+        
+                if(a){
+                    console.log(a);
+                }else{
+                    console.log("if stmt returns false for zero")
+                }
+        
+                if(c){
+                    console.log(c);
+                }else{
+                    console.log("if stmt returns false for null")
+                }
+        
+                if(e){
+                    console.log(e);
+                }else{
+                    console.log("if stmt returns false for undefined")
+                }
+        
+                if(b==d){
+                    console.log("b and d are equal when ==");
+                }else{
+                    console.log("b and d are not equal when ==");
+                }
+        
+                if(b===d){
+                    console.log("b and d are equal when ===");
+                }else{
+                    console.log("b and d are not equal when ===");
+                }
+        
+                   
+               }
+    
+
+        </code>
+    </pre>
+    </div>
+</body>
+
+
+</html>

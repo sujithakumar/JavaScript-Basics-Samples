@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./Assets/Stylesheets/commonStyles.css">
+    <script>
+       function a(){
+           var x=10,y= 20;
+           var z= x;
+           console.log("value of x: "+x);
+           console.log("value of z: "+z);
+           z= 100;
+           console.log("value of x: "+x);
+           console.log("value of z: "+z);
+       }
+    </script>
+</head>
+
+<body onLoad="a();">
+
+    <div>
+        <h4>Pass by value</h4>
+        <p>check console for output</p>
+        <pre>
+        <code>
+            function a(){
+                var x=10,y= 20;
+                var z= x;
+                console.log("value of x: "+x);
+                console.log("value of z: "+z);
+                z= 100;
+                console.log("value of x: "+x);
+                console.log("value of z: "+z);
+            }
+        </code>
+    </pre>
+    </div>
+</body>
+
+
+</html>

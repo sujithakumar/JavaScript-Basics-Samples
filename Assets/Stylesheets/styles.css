@@ -1,0 +1,24 @@
+:root {
+    margin: auto;
+    /* justify-content: center; */
+    /* text-align: center; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color:black;
+    /* the content will be centered on devices wider than 500px */
+    max-width: 800px;
+    padding: 20px;
+}
+
+.div-borders {
+    padding: 12px;
+    border: 2px solid grey;
+    box-shadow: 3px 3px 3px grey;
+    margin: 15px;
+}
+summary{
+    font-weight: bolder;
+    padding : 9px;
+    margin:2px;
+    outline: 3px
+}
