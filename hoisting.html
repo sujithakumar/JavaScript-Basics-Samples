@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./Assets/Stylesheets/commonStyles.css">
+    <style>
+        div {
+            border: 2px solid pink;
+            border-radius: 3px;
+            margin : 10px;
+        }
+
+        p {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <header> using variable before declaration</header>
+        <p id="demo"></p>
+
+        <script>
+            //assigning before declaration
+            x = 5;
+            elem = document.getElementById("demo");
+            elem.innerHTML = x;
+            //declaration
+            var x;
+        </script>
+    </div>
+    <div>
+        <header> using variable after declaration</header>
+        <p id="demo1"></p>
+
+        <script>
+            //declaration
+            var x;
+            //assigning after declaration
+            x = 5;
+            elem = document.getElementById("demo1");
+            elem.innerHTML = x;
+
+        </script>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Storages</title>
+    <link href="./storageStyles.css" rel="stylesheet">
+    <script src="storageScript.js"></script>
+</head>
+
+<body onload="loading()">
+    <form class="div-borders">
+        Name: <input type="text" name="name" id="name" />
+        <br><br>
+        Password: <input type="text" name="pass" id="pass" />
+        <br><br>
+        <div class="buttons">
+            <span>Store in:</span>
+            <button type="button" name="local" onClick="storeinLocal();">Local storage</button>
+            or
+            <button type="button" name="session" onClick="storeinSession();">Session storage</button>
+        </div>
+        <br><br>
+        <div class="buttons">
+            <span>Clear from:</span>
+            <button type="button" name="local" onClick="clearFromLocal();">Local storage</button>
+            or
+            <button type="button" name="session" onClick="clearFromSession();">Session storage</button>
+        </div>
+        <br><br>
+        <div class="buttons">
+            <span> Store as JSON: </span>
+            <button type="button" name="local" onClick="displayJson('L')">Local storage</button>
+            or
+            <button type="button" name="session" onClick="displayJson('S')">Session storage</button>
+        </div>
+        <br><br>
+        <div class="buttons">
+            <a href="./storages.html" target="_blank">open same page in new tab</a>
+            <br>
+            <span>Also check in incognito/private mode</span>
+        </div>
+        <br><br>
+        <div id="result">
+            Local Storage results:
+            <pre id="outputL"></pre>
+            <br>
+            Session Storage results:
+            <pre id="outputS"></pre>
+            
+        </div>
+    
+    </form>
+</body>
+
+</html>

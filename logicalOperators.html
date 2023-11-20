@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./Assets/Stylesheets/commonStyles.css">
+    <style>
+        h5 {
+            text-decoration: none !important;
+            color: blueviolet;
+            margin: 2px;
+            padding: 2px;
+        }
+    </style>
+    <script>
+        function a() {
+
+            //AND
+            console.log("------------AND------------");
+            console.log(1 && 'Strawbery');
+            console.log(1 && 2 && 5);
+            console.log(1 && 'Strawbery' && false);
+            console.log(false && 1);
+            console.log(true && true);
+            console.log(false && true);
+            console.log(false && false);
+            console.log(false && true);
+            console.log("STRAWBERRY" && 'Strawbery');
+            console.log("STRAWBERRY" && "Strawbery");
+            console.log('Strawbery' && "STRAWBERRY");
+
+            //OR
+            console.log("-------------OR------------");
+            console.log(1 || 'Strawbery');
+            console.log(1 || 2 || 5);
+            console.log(1 || 'Strawbery' || false);
+            console.log(false || 1);
+            console.log(true || true);
+            console.log(false || true);
+            console.log(false || false);
+            console.log(false || true);
+            console.log("STRAWBERRY" || 'Strawbery');
+            console.log("STRAWBERRY" || "Strawbery");
+            console.log('Strawbery' || "STRAWBERRY");
+
+            //NOT
+            console.log("-------------NOT------------");
+            console.log(!true);
+            console.log(!false);
+            console.log(!false && !false);
+            console.log(!true && !true);
+            console.log(!true && !false);
+            console.log(!false && !true);
+            console.log(!false || !false);
+            console.log(!true || !true);
+            console.log(!true || !false);
+            console.log(!false || !true);
+            console.log(!1);
+            console.log(!0)
+            console.log(!1 && !'string') ;
+            console.log(!1 || !'string') ;
+            console.log(!'string');
+
+        }
+    </script>
+</head>
+
+<body onLoad="a();">
+
+    <div>
+        <header>check console for output</header>
+        <pre>
+
+            <h5>AND - returns false even if 1 of the value is false; returns the <mark>LAST</mark> true value otherwise</h5>
+            console.log(1 && 'Strawbery');
+            console.log(1 && 2 && 5);
+            console.log(1 && 'Strawbery' && false);
+            console.log(false && 1);
+            console.log(true && true);
+            console.log(false && true);
+            console.log(false && false);
+            console.log(false && true);
+            console.log("STRAWBERRY" && 'Strawbery');
+            console.log("STRAWBERRY" && "Strawbery");
+            console.log('Strawbery' && "STRAWBERRY");
+
+            <h5>OR - returns true even if 1 of the value is true; returns the <mark>FIRST</mark> true value otherwise</h5>
+            console.log(1 || 'Strawbery');
+            console.log(1 || 2 || 5);
+            console.log(1 || 'Strawbery' || false);
+            console.log(false || 1);
+            console.log(true || true);
+            console.log(false || true);
+            console.log(false || false);
+            console.log(false || true);
+            console.log("STRAWBERRY" || 'Strawbery');
+            console.log("STRAWBERRY" || "Strawbery");
+            console.log('Strawbery' || "STRAWBERRY");
+
+            <h5>NOT - returns opposite value</h5>
+            console.log(!true);
+            console.log(!false);
+            console.log(!false && !false);
+            console.log(!true && !true);
+            console.log(!true && !false);
+            console.log(!false && !true);
+            console.log(!false || !false);
+            console.log(!true || !true);
+            console.log(!true || !false);
+            console.log(!false || !true);
+            console.log(!1);
+            console.log(!0)
+            console.log(!1 && !'string') ;
+            console.log(!1 || !'string') ;
+            console.log(!'string');
+
+        </pre>
+    </div>
+</body>
+
+
+</html>

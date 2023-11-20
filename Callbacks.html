@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./Assets/Stylesheets/commonStyles.css">
+    <script>
+        function a() {
+            console.log("called from function a ");
+            setTimeout(message, 3000);
+            setTimeout(triggerTimeOut, 3000);
+        }
+
+        const message = function () {
+            console.log("i m from callback function : message")
+        } 
+
+       const triggerTimeOut = function(){
+         setTimeout(() => {
+            console.log("i m from anonymous function")
+         }, 3000);
+        }
+
+    </script>
+</head>
+
+<body onLoad="a();">
+
+    <div>
+        <h4>Callbacks</h4>
+        <p>check console for output</p>
+        <pre>
+                <code>
+                    setTimeout(message,3000);
+                    message is a callback function
+                </code>
+        </pre>
+        <pre>
+            Anonymus function
+            <code>
+                setTimeout(() => {
+                 }, 3000);
+                 this is also called as lambda/fat arrow expressions
+            </code>
+        </pre>
+    </div>
+</body>
+
+
+</html>

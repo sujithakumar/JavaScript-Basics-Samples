@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./Assets/Stylesheets/commonStyles.css">
+    <style>
+        h5 {
+            text-decoration: none !important;
+            color: blueviolet;
+            margin: 2px;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>check console for output</header>
+        <pre>
+            console.log(null ?? null);
+            console.log('SOMETHING NOT NULL' ?? 'SOMETHING NOT NULL');
+            console.log(null ?? 'SOMETHING NOT NULL');
+            console.log('SOMETHING NOT NULL' ?? null);
+            console.log(null ?? 'SOMETHING NOT NULL' ?? 'something');
+            console.log('SOMETHING NOT NULL' ?? 'something' ?? null);
+           
+        </pre>
+    </div>
+    <script>
+        function a() {
+
+            console.log(null ?? null);
+            console.log('SOMETHING NOT NULL' ?? 'SOMETHING NOT NULL');
+            console.log(null ?? 'SOMETHING NOT NULL');
+            console.log('SOMETHING NOT NULL' ?? null);
+            console.log(null ?? 'SOMETHING NOT NULL' ?? 'something');
+            console.log('SOMETHING NOT NULL' ?? 'something' ?? null);
+
+        }
+
+        a();
+
+    </script>
+</body>
+
+</html>

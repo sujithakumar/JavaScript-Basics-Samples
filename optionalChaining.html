@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./Assets/Stylesheets/commonStyles.css">
+    <style>
+        h5 {
+            text-decoration: none !important;
+            color: blueviolet;
+            margin: 2px;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>check console for output</header>
+        <pre>
+            var person ={
+                name:'abc',
+                age:10,
+                height:5.5,
+                weight:55
+            }
+            console.log(person.age);
+            console.log(person.gender);
+            console.log(person?.gender);
+           
+        </pre>
+    </div>
+    <script>
+        function a() {
+            var person = {
+                name: 'abc',
+                age: 10,
+                height: 5.5,
+                weight: 55
+            }
+            console.log(person.age);
+            console.log(person.gender);
+            console.log(person?.gender);
+        }
+
+        a();
+
+    </script>
+</body>
+
+</html>
