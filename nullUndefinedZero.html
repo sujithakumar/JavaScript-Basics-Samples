@@ -2,40 +2,62 @@
 
 <head>
     <link rel="stylesheet" href="./Assets/Stylesheets/commonStyles.css">
+    <style>
+         h5 {
+            text-decoration: none !important;
+            color: blueviolet;
+            margin: 2px;
+            padding: 2px;
+        }
+    </style>
     <script>
         function a() {
 
-            var a = 0, b = 1, c = null, d = "1", e;
+            var a = null;
+            var b = 0;
+            var c; //undefined;
+            var d = 1;
+            var e = '1';
+
+            console.log(d == e);
+            console.log(d === e);
+
+            console.log("-------------------------");
 
             if (a) {
-                console.log(a);
+                console.log("I printed a");
+            } else if (b) {
+                console.log("I printed b");
+            } else if (c) {
+                console.log("I printed c");
             } else {
-                console.log("if stmt returns false for zero")
+                console.log("Can't print NULL 0 UNDEFINED");
             }
 
-            if (c) {
-                console.log(c);
-            } else {
-                console.log("if stmt returns false for null")
-            }
+            console.log("-------------------------");
 
-            if (e) {
-                console.log(e);
-            } else {
-                console.log("if stmt returns false for undefined")
-            }
+            console.log(null && undefined && 0);
+            console.log(undefined && null && 0);
+            console.log(0 && undefined && null);
+            console.log(null && 0 && undefined);
 
-            if (b == d) {
-                console.log("b and d are equal when ==");
-            } else {
-                console.log("b and d are not equal when ==");
-            }
+            console.log("-------------------------");
+            
+            console.log(null || undefined || 0);
+            console.log(undefined || null || 0);
+            console.log(0 || undefined || null);
+            console.log(null || 0 || undefined);
 
-            if (b === d) {
-                console.log("b and d are equal when ===");
-            } else {
-                console.log("b and d are not equal when ===");
-            }
+            console.log("-------------------------");
+            console.log(null && undefined || 0);
+            console.log(undefined && null || 0);
+            console.log(0 && undefined || null);
+            console.log(null && 0 || undefined);
+
+            console.log(null || undefined && 0);
+            console.log(undefined || null && 0);
+            console.log(0 || undefined && null);
+            console.log(null || 0 && undefined);
 
 
         }
@@ -47,46 +69,53 @@
     <div>
         <p>check console for output</p>
         <pre>
-        <code>
-            function a(){
+            var a = null;
+            var b = 0;
+            var c; //undefined;
+            var d = 1;
+            var e = '1';
 
-                var a=0, b=1, c=null, d="1",e;
-        
-                if(a){
-                    console.log(a);
-                }else{
-                    console.log("if stmt returns false for zero")
-                }
-        
-                if(c){
-                    console.log(c);
-                }else{
-                    console.log("if stmt returns false for null")
-                }
-        
-                if(e){
-                    console.log(e);
-                }else{
-                    console.log("if stmt returns false for undefined")
-                }
-        
-                if(b==d){
-                    console.log("b and d are equal when ==");
-                }else{
-                    console.log("b and d are not equal when ==");
-                }
-        
-                if(b===d){
-                    console.log("b and d are equal when ===");
-                }else{
-                    console.log("b and d are not equal when ===");
-                }
-        
-                   
-               }
-    
+            console.log(d == e);
+            console.log(d === e);
 
-        </code>
+            console.log("-------------------------");
+
+            if (a) {
+                console.log("I printed a");
+            } else if (b) {
+                console.log("I printed b");
+            } else if (c) {
+                console.log("I printed c");
+            } else {
+                console.log("Can't print NULL 0 UNDEFINED");
+            }
+
+            console.log("-------------------------");
+            <h5>prints FIRST false value</h5>
+
+            console.log(null && undefined && 0);
+            console.log(undefined && null && 0);
+            console.log(0 && undefined && null);
+            console.log(null && 0 && undefined);
+
+            console.log("-------------------------");
+            <h5>prints LAST false value</h5>
+
+            console.log(null || undefined || 0);
+            console.log(undefined || null || 0);
+            console.log(0 || undefined || null);
+            console.log(null || 0 || undefined);
+
+            console.log("-------------------------");
+            console.log(null && undefined || 0);
+            console.log(undefined && null || 0);
+            console.log(0 && undefined || null);
+            console.log(null && 0 || undefined);
+
+            console.log(null || undefined && 0);
+            console.log(undefined || null && 0);
+            console.log(0 || undefined && null);
+            console.log(null || 0 && undefined);
     </pre>
     </div>
 </body>

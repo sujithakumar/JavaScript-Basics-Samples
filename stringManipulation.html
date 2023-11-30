@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>String Manipulation</title>
+    <style>
+        :root {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        #outerDiv {
+            margin: 10px;
+            border: 5px solid green;
+            border-radius: 10px;
+            padding: 8% 25%;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        mark {
+            background-color: aqua;
+            font-size: 30px !important;
+            font-weight: bold;
+        }
+
+        .inner {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header><mark>consider var Str = "Hey Siyaa !! " </mark></header>
+    <div id="outerDiv">
+        <script>
+            var Str = "Hey Siyaa !! ";
+            console.log(Str);
+            console.log(Str.length);
+            console.log(Str.trim());
+            console.log(Str.length);
+            console.log(Str.indexOf("H"));
+            console.log(Str.indexOf("h"));
+            console.log(Str.lastIndexOf("a"));
+            console.log(Str.toUpperCase());
+            console.log(Str.charAt(5));
+            console.log(Str.includes(" ", 3));
+            console.log(Str.repeat(3));
+            console.log(Str.slice(4, 7));
+            console.log(Str.endsWith("!!!"));
+            console.log(Str.padStart(2, "omg"));
+            console.log(Str.replace("!!", ":)"));
+            console.log(Str.split(" "));
+            console.log(Str.split(" ").length);
+            console.log(Str.substring(2,4));
+            console.log(Str);
+            console.log(Str.length);
+
+        </script>
+        <div id="inner">
+
+            <pre>
+                console.log(Str);
+                console.log(Str.length);
+                console.log(Str.trim());
+                console.log(Str.length);
+                console.log(Str.indexOf("H"));
+                console.log(Str.indexOf("h"));
+                console.log(Str.lastIndexOf("a"));
+                console.log(Str.toUpperCase());
+                console.log(Str.charAt(5));
+                console.log(Str.includes(" ",3));
+                console.log(Str.repeat(3));
+                console.log(Str.slice(4,7));
+                console.log(Str.endsWith("!!!"));
+                console.log(Str.padStart(2,"omg"));
+                console.log(Str.replace("!!",":)"));
+                console.log(Str.split(" "));
+                console.log(Str.split(" ").length);
+                console.log(Str.substring(2,4));
+                console.log(Str);
+                console.log(Str.length);
+            </pre>
+
+        </div>
+    </div>
+</body>
+
+</html>

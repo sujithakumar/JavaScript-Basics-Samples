@@ -1,0 +1,251 @@
+<html>
+
+<head>
+    <style>
+        :root {
+            font-size: 17px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header {
+            text-decoration: underline !important;
+            color: blueviolet;
+            margin: 2px;
+            padding: 2px;
+            font-size: 20px;
+        }
+
+        mark {
+            background-color: aqua;
+            text-decoration: underline;
+        }
+
+        div {
+            padding: 5px;
+            margin: 10px;
+        }
+
+        .outerBox {
+            margin:4px;
+            border: 2px solid grey;
+        }
+
+        .flexbox {
+            display: flex;
+            border: 3px solid blueviolet;
+        }
+
+        details {
+            display: block;
+            border: 3px solid red;
+            margin: 5px;
+            width:80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outerBox">
+        <header>check console for output</header>
+        <div class="flexbox">
+            <div>
+                <pre>
+                    var Gender = {
+                        "o1": 'male',
+                        "o2": 'female'
+                    }
+        
+                    var marks = {
+                        eng: 100,
+                        french: 70,
+                        math: 50
+                    }
+                </pre>
+            </div>
+            <div>
+                <pre>
+                    var person = {
+                        name: 'abc',
+                        age: 10,
+                        weight: "50KG",
+                        height: 5.5,
+                        gender: {
+                            boy: Gender.o1,
+                            girl: Gender.o2
+                        },
+                        marks : marks
+                    }
+                </pre>
+            </div>
+        </div>
+        <div class="flexbox">
+            <details>
+                <summary><mark>DEEP COPY</mark></summary>
+                <p>
+                <pre>
+    var person1 = person;
+    person1.age = 30;
+
+    console.log(person.age);
+    console.log(person1.age);
+
+    person1.gender.boy = "MALE";
+
+    console.log(person.gender);
+    console.log(person1.gender);
+                    </pre>
+                </p>
+            </details>
+
+            <details>
+                <summary><mark>Deep copy - copying copied object</mark></summary>
+                <p>
+                <pre>
+    var person4 = person1;
+    person4.weight = "25KG";
+
+    console.log(person.weight);
+    console.log(person1.weight);
+    console.log(person4.weight);
+                    </pre>
+                </p>
+            </details>
+
+
+            <details>
+                <summary><mark>Shallow copy -- Object.assign()</mark></summary>
+                <p>
+                <pre>
+    var person2 = Object.assign({}, person1);
+
+    person2.name = 'xyz';
+    console.log(person.name);
+    console.log(person1.name);
+    console.log(person2.name);
+
+    person2.gender.girl = "FEMALE";
+    console.log(person.gender);
+    console.log(person1.gender);
+    console.log(person2.gender);
+        
+                    </pre>
+                </p>
+            </details>
+
+
+            <details>
+                <summary><mark>Shallow copy -- Nested Objects</mark></summary>
+                <p>
+                <pre>
+    var person3 = JSON.parse(JSON.stringify(person2));
+
+    person3.height = 6;
+    console.log(person.height);
+    console.log(person1.height);
+    console.log(person2.height);
+    console.log(person3.height); //shallow
+    console.log(person4.height);
+
+    person3.marks.math = 10000;
+    console.log(person.marks);
+    console.log(person1.marks);
+    console.log(person2.marks);
+    console.log(person3.marks); //shallow
+    console.log(person4.marks);
+        
+                    </pre>
+                </p>
+            </details>
+        </div>
+    </div>
+    <script>
+        function a() {
+
+            var Gender = {
+                "o1": 'male',
+                "o2": 'female'
+            }
+
+            var marks = {
+                eng: 100,
+                french: 70,
+                math: 50
+            }
+
+            var person = {
+                name: 'abc',
+                age: 10,
+                weight: "50KG",
+                height: 5.5,
+                gender: {
+                    boy: Gender.o1,
+                    girl: Gender.o2
+                },
+                marks: marks
+            }
+
+            console.log("Deep copy");
+
+            var person1 = person;
+            person1.age = 30;
+            console.log(person.age);
+            console.log(person1.age);
+
+            person1.gender.boy = "MALE";
+            console.log(person.gender);
+            console.log(person1.gender);
+
+            console.log("--------------------------------------");
+            console.log("Deep copy - copying copied object");
+
+            var person4 = person1;
+            person4.weight = "25KG";
+            console.log(person.weight);
+            console.log(person1.weight);
+            console.log(person4.weight);
+
+            console.log("---------------------------------------");
+
+            console.log("Shallow copy -- Object.assign()");
+
+            var person2 = Object.assign({}, person1);
+            person2.name = 'xyz';
+            console.log(person.name);
+            console.log(person1.name);
+            console.log(person2.name);
+
+            person2.gender.girl = "FEMALE";
+            console.log(person.gender);
+            console.log(person1.gender);
+            console.log(person2.gender);
+
+            console.log('Object.assign() will not work with nested objects');
+
+
+            console.log("--------------------------------------------");
+            console.log("Shallow copy -- Nested Objects");
+
+            var person3 = JSON.parse(JSON.stringify(person2));
+
+            person3.height = 6;
+            console.log(person.height);
+            console.log(person1.height);
+            console.log(person2.height);
+            console.log(person3.height); //shallow
+            console.log(person4.height);
+
+            person3.marks.math = 10000;
+            console.log(person.marks);
+            console.log(person1.marks);
+            console.log(person2.marks);
+            console.log(person3.marks); //shallow
+            console.log(person4.marks);
+
+        }
+
+        a();
+
+    </script>
+</body>
+
+</html>

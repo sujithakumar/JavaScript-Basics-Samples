@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Manipulation</title>
+    <style>
+        :root {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        #outerDiv {
+            margin: 10px;
+            border: 5px solid green;
+            border-radius: 10px;
+            padding: 8% 20%;
+        }
+
+        header {
+            text-align: center;
+            font-size: 25px !important;
+            font-weight: bold;
+        }
+
+        mark {
+            background-color: aqua;
+        }
+
+        span,
+        mark {
+            display: block;
+        }
+
+        .inner {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outerDiv">
+        <script>
+            var Arr = [1, 2, 'test', { name: "abc" }];
+            var Arr1 = [];
+
+            console.log(Arr1);
+            console.log(Arr1.length);
+
+            console.log(Arr);
+            console.log(Arr.length);
+
+            console.log("==================================================================");
+            console.log("copying Arr to Arr1");
+
+            Arr1 = Arr;
+            console.log(Arr1);
+            console.log(Arr);
+
+            console.log("changes to Arr1 will reflect in Arr");
+
+            Arr1.push("push1");
+            console.log(Arr1);
+            console.log(Arr);
+
+            console.log("remove value in the last position");
+            Arr1.pop();
+            console.log(Arr1);
+            console.log(Arr);
+
+            console.log("Push value in the first position");
+            Arr1.unshift("push2");
+            console.log(Arr1);
+            console.log(Arr);
+
+            console.log("remove value in the first position");
+            Arr1.shift("push2");
+            console.log(Arr1);
+            console.log(Arr);
+
+            console.log("removing array elemnts");
+            Arr1.length = 0;
+            console.log(Arr1);
+            console.log(Arr);
+
+
+            console.log("==================================================================");
+            Arr = [1, 2, 'test', { name: "abc" }];
+            console.log(Arr.sort());
+            console.log(Arr.reverse());
+
+            console.log("slice wont modify the original array");
+            console.log(Arr.slice(1, 3));
+            console.log(Arr);
+
+            console.log("splice modify the original array");
+            console.log(Arr.length);
+            console.log(Arr.splice(1, 2));
+            console.log(Arr);
+            console.log(Arr.length);
+
+            console.log("==================================================================");
+            Arr = [1, 2, 'test', { name: "abc" }];
+
+        </script>
+        <header>
+            <span>
+                Any operation would modify the original array.
+            </span>
+        </header>
+        <div id="inner">
+
+            <pre>
+    var Arr = [1, 2, 'test', { name: "abc" }];
+    var Arr1 = [];
+
+    console.log(Arr1);
+    console.log(Arr1.length);
+
+    console.log(Arr);
+    console.log(Arr.length);
+
+    console.log("==================================================================");
+    console.log("copying Arr to Arr1");
+    
+    Arr1 = Arr;
+    console.log(Arr1);
+    console.log(Arr);
+
+    console.log("changes to Arr1 will reflect in Arr");
+
+    Arr1.push("push1");
+    console.log(Arr1);
+    console.log(Arr);
+
+    console.log("remove value in the last position");
+    Arr1.pop();
+    console.log(Arr1);
+    console.log(Arr);
+
+    console.log("Push value in the first position");
+    Arr1.unshift("push2");
+    console.log(Arr1);
+    console.log(Arr);
+
+    console.log("remove value in the first position");
+    Arr1.shift("push2");
+    console.log(Arr1);
+    console.log(Arr);
+
+    console.log("removing array elemnts");
+    Arr1.length = 0;
+    console.log(Arr1);
+    console.log(Arr);
+
+
+    console.log("==================================================================");
+    Arr = [1, 2, 'test', { name: "abc" }];
+    console.log(Arr.sort());
+    console.log(Arr.reverse());
+
+    console.log("slice wont modify the original array");
+    console.log(Arr.slice(1,3));
+    console.log(Arr);
+
+    console.log("splice modify the original array");
+    console.log(Arr.length);
+    console.log(Arr.splice(1,2));
+    console.log(Arr);
+    console.log(Arr.length);
+
+    console.log("==================================================================");
+    Arr = [1, 2, 'test', { name: "abc" }];
+
+ </pre>
+
+        </div>
+    </div>
+</body>
+
+</html>

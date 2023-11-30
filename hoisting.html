@@ -6,7 +6,8 @@
         div {
             border: 2px solid pink;
             border-radius: 3px;
-            margin : 10px;
+            margin: 10px;
+            height: 35%;
         }
 
         p {
@@ -36,12 +37,49 @@
 
         <script>
             //declaration
-            var x;
+            var y;
             //assigning after declaration
-            x = 5;
+            y = 0;
             elem = document.getElementById("demo1");
-            elem.innerHTML = x;
+            elem.innerHTML = y;
 
+        </script>
+    </div>
+    <div>
+        <header> using variable definition before declaration</header>
+        <p id="demo2"></p>
+
+        <script>
+            elem = document.getElementById("demo2");
+            elem.innerHTML = z;
+            //variable declare and define
+            var z = 6;
+
+        </script>
+    </div>
+
+    <div>
+        <header> using let</header>
+        <p id="demo3"></p>
+
+        <script>
+            R = 100;
+            elem = document.getElementById("demo3");
+            elem.innerHTML = R;
+            //variable declare and define
+            let R;
+
+        </script>
+    </div>
+
+    <div>
+        <header>Using Const</header>
+        <p id="demo4"></p>
+
+        <script>
+            elem = document.getElementById("demo4");
+            elem.innerHTML = P;
+            const P = 6;
         </script>
     </div>
 </body>
